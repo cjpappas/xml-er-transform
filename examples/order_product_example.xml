@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram>
+  <entities>
+    <entity id="1" name="Order">
+      <attribute id="1.1" value="OrderID" pi="true">
+      <attribute id="1.2" value="OrderDate">
+    </entity>
+    <entity id="2" name="Product">
+      <attribute id="2.1" value="ProductID" pi="true">
+      <attribute id="2.2" value="ProductName">
+      <attribute id="2.3" value="ProductPrice">
+    </entity>
+  </entities>
+  <relationships>
+    <relationship id="r1" name="has" fromEnt="1" toEnt="2" value="many-many" leftCons="opt" rightCons="mand" leftVal="0,M" rightVal="1,5">
+      <attribute id="r1.1" value="Quantity">
+    </relationship>
+  </relationships>
+</diagram>

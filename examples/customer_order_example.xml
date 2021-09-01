@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram>
+  <entities>
+    <entity id="1" name="Customer">
+      <attribute id="1.1" value="CustomerID" pi="true"/>
+      <attribute id="1.2" value="CustomerName"/>
+    </entity>
+    <entity id="2" name="Order">
+      <attribute id="2.1" value="OrderID" pi="true"/>
+      <attribute id="2.2" value="OrderDate"/>
+    </entity>
+  </entities>
+  <relationships>
+    <relationship id="r1" name="places" fromEnt="1" toEnt="2" value="one-many" leftCons="mand" rightCons="opt" leftVal="1,1" rightVal="0,M"/>
+  </relationships>
+</diagram>
